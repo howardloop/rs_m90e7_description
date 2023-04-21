@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(robot_urdf_rs_m90e7)
+project(rs_m90e7_description)
 
 find_package(catkin REQUIRED)
 

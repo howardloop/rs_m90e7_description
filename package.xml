@@ -1,5 +1,5 @@
 <package format="2">
-  <name>robot_urdf_rs_m90e7</name>
+  <name>rs_m90e7_description</name>
   <version>1.0.0</version>
   <description>
     <p>URDF Description package for RS-M90E7</p>
@@ -7,7 +7,7 @@
 for RS-M90E7 robot</p>
   </description>
   <author>Howard</author>
-  <maintainer email="makubex49@gmail.com" />
+  <maintainer email="howard.he.cheng@gmail.com" />
   <license>LGPL</license>
   <buildtool_depend>catkin</buildtool_depend>
   <depend>roslaunch</depend>

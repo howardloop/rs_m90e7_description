@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="robot_urdf_rs_m90e7">
+  name="rs_m90e7_description">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.100831175369042 0.445715927303343 0.100637842700082"
+        xyz="-0.10083 0.44571 0.10064"
         rpy="0 0 0" />
       <mass
-        value="14.3478185896065" />
+        value="14.348" />
       <inertia
-        ixx="1.195816034126"
-        ixy="0.0652609401249974"
-        ixz="-0.0022764477587279"
-        iyy="0.543343893969374"
-        iyz="-0.348851826859099"
-        izz="0.836395564683163" />
+        ixx="1.1958"
+        ixy="0.065249"
+        ixz="-0.0022916"
+        iyy="0.54334"
+        iyz="-0.34884"
+        izz="0.83638" />
     </inertial>
     <visual>
       <origin
@@ -26,12 +26,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/base_link.STL" />
+          filename="package://rs_m90e7_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/base_link.STL" />
+          filename="package://rs_m90e7_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="link1">
     <inertial>
       <origin
-        xyz="-0.100831175369042 0.344765927303343 0.100637842700082"
+        xyz="-0.100828740851782 0.344764306357991 0.100637842700082"
         rpy="0 0 0" />
       <mass
         value="14.3478185896065" />
       <inertia
-        ixx="1.195816034126"
-        ixy="0.0652609401249974"
-        ixz="-0.0022764477587279"
-        iyy="0.543343893969374"
-        iyz="-0.348851826859099"
-        izz="0.836395564683163" />
+        ixx="1.19580116428598"
+        ixy="0.065248716032548"
+        ixz="-0.00229155804674572"
+        iyy="0.543340717434702"
+        iyz="-0.348841942351221"
+        izz="0.836377518308467" />
     </inertial>
     <visual>
       <origin
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link1.STL" />
+          filename="package://rs_m90e7_description/meshes/link1.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link1.STL" />
+          filename="package://rs_m90e7_description/meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -89,7 +89,7 @@
     type="continuous">
     <origin
       xyz="0 0 0.10095"
-      rpy="1.5707963267949 0 0" />
+      rpy="1.5708 0 0" />
     <parent
       link="base_link" />
     <child
@@ -101,17 +101,17 @@
     name="link2">
     <inertial>
       <origin
-        xyz="-0.241615913720053 0.0318811753690423 -0.100637842700082"
+        xyz="-0.241614292774701 0.0318787408517825 -0.100637842700082"
         rpy="0 0 0" />
       <mass
         value="14.3478185896065" />
       <inertia
-        ixx="0.543343893969374"
-        ixy="0.0652609401249973"
-        ixz="-0.348851826859099"
-        iyy="1.195816034126"
-        iyz="-0.00227644775872794"
-        izz="0.836395564683163" />
+        ixx="0.543340717434702"
+        ixy="0.0652487160325479"
+        ixz="-0.348841942351221"
+        iyy="1.19580116428598"
+        iyz="-0.00229155804674576"
+        izz="0.836377518308467" />
     </inertial>
     <visual>
       <origin
@@ -119,7 +119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link2.STL" />
+          filename="package://rs_m90e7_description/meshes/link2.STL" />
       </geometry>
       <material
         name="">
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link2.STL" />
+          filename="package://rs_m90e7_description/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -141,30 +141,30 @@
     name="j2"
     type="continuous">
     <origin
-      xyz="-0.0689499999999999 0.10315001358329 0"
-      rpy="-3.14159265358979 0 -1.5707963267949" />
+      xyz="-0.06895 0.10315 0"
+      rpy="-3.1416 0 -1.5708" />
     <parent
       link="link1" />
     <child
       link="link2" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
   </joint>
   <link
     name="link3">
     <inertial>
       <origin
-        xyz="-0.100637842700082 -0.0318811753690423 0.188384086279947"
+        xyz="-0.100637842700082 -0.0318787408517825 0.188385707225299"
         rpy="0 0 0" />
       <mass
         value="14.3478185896065" />
       <inertia
-        ixx="0.836395564683163"
-        ixy="0.00227644775872792"
-        ixz="-0.348851826859099"
-        iyy="1.195816034126"
-        iyz="-0.0652609401249974"
-        izz="0.543343893969374" />
+        ixx="0.836377518308467"
+        ixy="0.00229155804674574"
+        ixz="-0.348841942351221"
+        iyy="1.19580116428598"
+        iyz="-0.0652487160325479"
+        izz="0.543340717434702" />
     </inertial>
     <visual>
       <origin
@@ -172,7 +172,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link3.STL" />
+          filename="package://rs_m90e7_description/meshes/link3.STL" />
       </geometry>
       <material
         name="">
@@ -186,7 +186,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link3.STL" />
+          filename="package://rs_m90e7_description/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -195,7 +195,7 @@
     type="continuous">
     <origin
       xyz="-0.43 0 0"
-      rpy="3.14159265358979 -1.5707963267949 0" />
+      rpy="0 -1.5708 0" />
     <parent
       link="link2" />
     <child
@@ -207,17 +207,17 @@
     name="link4">
     <inertial>
       <origin
-        xyz="-0.188384086279947 0.0179312261275139 -0.309362157299917"
+        xyz="-0.188385707225299 0.017928791610254 -0.309362157299917"
         rpy="0 0 0" />
       <mass
         value="14.3478185896065" />
       <inertia
-        ixx="0.543343893969374"
-        ixy="-0.0652609401249974"
-        ixz="-0.348851826859099"
-        iyy="1.195816034126"
-        iyz="0.0022764477587279"
-        izz="0.836395564683163" />
+        ixx="0.543340717434702"
+        ixy="-0.065248716032548"
+        ixz="-0.348841942351221"
+        iyy="1.19580116428598"
+        iyz="0.00229155804674572"
+        izz="0.836377518308467" />
     </inertial>
     <visual>
       <origin
@@ -225,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link4.STL" />
+          filename="package://rs_m90e7_description/meshes/link4.STL" />
       </geometry>
       <material
         name="">
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link4.STL" />
+          filename="package://rs_m90e7_description/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -247,30 +247,30 @@
     name="j4"
     type="continuous">
     <origin
-      xyz="-0.409999999999999 -0.0139499492415285 0"
-      rpy="3.14159265358979 1.5707963267949 0" />
+      xyz="-0.41 -0.01395 0"
+      rpy="3.1416 1.5708 0" />
     <parent
       link="link3" />
     <child
       link="link4" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
   </joint>
   <link
     name="link5">
     <inertial>
       <origin
-        xyz="-0.309362157299917 0.256284035521475 0.0454687738724853"
+        xyz="-0.30936 -0.25629 -0.045471"
         rpy="0 0 0" />
       <mass
-        value="14.3478185896065" />
+        value="14.348" />
       <inertia
-        ixx="0.836395564683163"
-        ixy="0.348851826859099"
-        ixz="-0.0022764477587279"
-        iyy="0.543343893969374"
-        iyz="-0.0652609401249974"
-        izz="1.195816034126" />
+        ixx="0.83638"
+        ixy="-0.34884"
+        ixz="0.0022916"
+        iyy="0.54334"
+        iyz="-0.065249"
+        izz="1.1958" />
     </inertial>
     <visual>
       <origin
@@ -278,12 +278,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link5.STL" />
+          filename="package://rs_m90e7_description/meshes/link5.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -292,7 +292,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_urdf_rs_m90e7/meshes/link5.STL" />
+          filename="package://rs_m90e7_description/meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -300,13 +300,66 @@
     name="j5"
     type="continuous">
     <origin
-      xyz="0.0678999492415284 0.0633999999999992 0"
-      rpy="1.5707963267949 -1.5707963267949 0" />
+      xyz="0.0679 0.0634 0"
+      rpy="1.5708 -1.5708 0" />
     <parent
       link="link4" />
     <child
       link="link5" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="tool">
+    <inertial>
+      <origin
+        xyz="0.045471 -0.39021 0.31969"
+        rpy="0 0 0" />
+      <mass
+        value="14.348" />
+      <inertia
+        ixx="1.1958"
+        ixy="-0.0022916"
+        ixz="-0.065249"
+        iyy="0.83638"
+        iyz="0.34884"
+        izz="0.54334" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rs_m90e7_description/meshes/tool.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rs_m90e7_description/meshes/tool.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j6"
+    type="continuous">
+    <origin
+      xyz="0.08085 0.0634 0"
+      rpy="-1.5708 1.5708 3.1416" />
+    <parent
+      link="link5" />
+    <child
+      link="tool" />
+    <axis
+      xyz="0 1 0" />
   </joint>
 </robot>
