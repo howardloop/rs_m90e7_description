@@ -1,4 +1,4 @@
-# Readme
+# README
 
 此package為計畫使用機器人的URDF
 
@@ -13,6 +13,6 @@
 ## 測試
 
 ```bash
-roslaunch robot_urdf_rs_m90e7 display.launch
+roslaunch rs_m90e7_description display.launch
 ```
 
