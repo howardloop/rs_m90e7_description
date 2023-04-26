@@ -2,12 +2,16 @@
   <node 
     name="joint_state_publisher_gui" 
     pkg="joint_state_publisher_gui" 
-    exec="joint_state_publisher_gui"/>
+    exec="joint_state_publisher_gui">
+    <param name="rate" value="60.0"/>
+  </node>
   <node 
     name="robot_state_publisher" 
     pkg="robot_state_publisher" 
     exec="robot_state_publisher"
-    args="$(find-pkg-share rs_m90e7_description)/urdf/rs_m90e7_description.urdf"/>    
+    args="$(find-pkg-share rs_m90e7_description)/urdf/rs_m90e7_description.urdf"> 
+    <param name="publish_frequency" value="100.0"/>  
+  </node> 
   <node 
     name="rviz2" 
     pkg="rviz2" 
