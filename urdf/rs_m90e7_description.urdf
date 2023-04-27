@@ -83,7 +83,7 @@
   </link>
   <joint
     name="j1"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0 0 0.10095"
       rpy="1.5708 0 0" />
@@ -93,6 +93,11 @@
       link="link1" />
     <axis
       xyz="0 1 0" />
+    <limit
+      lower="-6.2831853072"
+      upper="6.2831853072"
+      effort="0"
+      velocity="4.7123889804" />
   </joint>
   <link
     name="link2">
@@ -136,7 +141,7 @@
   </link>
   <joint
     name="j2"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.06895 0.10315 0"
       rpy="-3.1416 0 -1.5708" />
@@ -146,6 +151,11 @@
       link="link2" />
     <axis
       xyz="0 -1 0" />
+    <limit
+      lower="-6.2831853072"
+      upper="6.2831853072"
+      effort="0"
+      velocity="4.7123889804" />
   </joint>
   <link
     name="link3">
@@ -189,7 +199,7 @@
   </link>
   <joint
     name="j3"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.43 0 0"
       rpy="3.1416 -1.5708 0" />
@@ -199,6 +209,11 @@
       link="link3" />
     <axis
       xyz="0 1 0" />
+    <limit
+      lower="-4.0491638646"
+      upper="1.2566370614"
+      effort="0"
+      velocity="7.1558499332" />
   </joint>
   <link
     name="link4">
@@ -242,7 +257,7 @@
   </link>
   <joint
     name="j4"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.41 -0.01395 0"
       rpy="3.1416 1.5708 0" />
@@ -252,6 +267,11 @@
       link="link4" />
     <axis
       xyz="0 -1 0" />
+    <limit
+      lower="-6.2831853072"
+      upper="6.2831853072"
+      effort="16.9"
+      velocity="8.290313947" />
   </joint>
   <link
     name="link5">
@@ -295,7 +315,7 @@
   </link>
   <joint
     name="j5"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.0679 0.0634 0"
       rpy="-1.5708 -1.5708 0" />
@@ -305,6 +325,11 @@
       link="link5" />
     <axis
       xyz="0 1 0" />
+    <limit
+      lower="-6.2831853072"
+      upper="6.2831853072"
+      effort="18.9"
+      velocity="8.290313947" />   
   </joint>
   <link
     name="tool">
@@ -348,7 +373,7 @@
   </link>
   <joint
     name="j6"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.08085 0.0634 0"
       rpy="-1.5708 1.5708 3.1416" />
@@ -358,5 +383,10 @@
       link="tool" />
     <axis
       xyz="0 -1 0" />
+    <limit
+      lower="-6.2831853072"
+      upper="6.2831853072"
+      effort="10.2"
+      velocity="13.1772358526" />
   </joint>
 </robot>
