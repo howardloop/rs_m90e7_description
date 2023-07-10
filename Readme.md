@@ -33,8 +33,12 @@ colcon build
 # source ~/ros2_ws/install/setup.bash
 ```
 
-Run
+install exec depend
+```shell
+rosdep install --from-paths ~/ros2_ws/src/rs_m90e7_description
+```
 
+Run
 ```shell
 ros2 launch rs_m90e7_description display.launch
 ```
