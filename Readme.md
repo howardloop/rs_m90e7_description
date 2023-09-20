@@ -29,7 +29,8 @@ Build
 
 ```bash
 cd ~/ros2_ws/
-colcon build
+# colcon build
+colcon build --symlink-install --packages-select rs_m90e7_description
 # source ~/ros2_ws/install/setup.bash
 ```
 
