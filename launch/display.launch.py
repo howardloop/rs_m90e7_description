@@ -1,14 +1,17 @@
-import os
+
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.substitutions import PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
 
-    rs_m90e7_description_path = get_package_share_directory('rs_m90e7_description')
-    rviz_file = os.path.join(rs_m90e7_description_path, 'rviz', 'urdf.rviz')    
-    urdf_file = os.path.join(rs_m90e7_description_path, 'urdf', 'rs_m90e7_description.urdf')
+    rviz_file = PathJoinSubstitution(
+        [FindPackageShare("rs_m90e7_description"), "rviz", "urdf.rviz"])
+    urdf_file = PathJoinSubstitution(
+        [FindPackageShare("rs_m90e7_description"), "urdf", "rs_m90e7_description.urdf"])
 
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',
@@ -21,6 +24,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
+        output="both",
         arguments=[urdf_file],
         parameters=[{'publish_frequency': 100.0}]
     )
@@ -29,6 +33,7 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         name='rviz2',
+        output="both",
         arguments=['-d', rviz_file]
     )
 
