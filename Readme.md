@@ -10,10 +10,6 @@
 
 ![image-20230517095316574](./pic/Readme/image-20230517095316574.png)
 
-![image-20230517095701780](./pic/Readme/image-20230517095701780.png)
-
-
-
 
 
 ## 測試
@@ -41,7 +37,15 @@ rosdep install --from-paths ~/ros2_ws/src/rs_m90e7_description
 
 Run
 ```shell
-ros2 launch rs_m90e7_description display.launch
+ros2 launch rs_m90e7_description display.launch.py
 ```
 
+![image-20230517095701780](./pic/Readme/image-20230517095701780.png)
 
+
+
+```shell
+ros2 launch rs_m90e7_description display_xacro.launch.py
+```
+
+![image-20230920155407332](pic/Readme/image-20230920155407332.png)
