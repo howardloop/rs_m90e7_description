@@ -16,22 +16,22 @@
 
     <xacro:rs_m90e7 prefix="robot1_" parent="world">
         <!-- position robot in the world -->
-        <origin xyz="1 1 0" rpy="0 0 0" />
+        <origin xyz="0.5 0.5 0" rpy="0 0 ${-135*pi/180}" />
     </xacro:rs_m90e7>
 
     <xacro:rs_m90e7 prefix="robot2_" parent="world">
         <!-- position robot in the world -->
-        <origin xyz="-1 1 0" rpy="0 0 0" />
+        <origin xyz="-0.5 0.5 0" rpy="0 0 ${-45*pi/180}" />
     </xacro:rs_m90e7>
 
     <xacro:rs_m90e7 prefix="robot3_" parent="world">
         <!-- position robot in the world -->
-        <origin xyz="-1 -1 0" rpy="0 0 0" />
+        <origin xyz="-0.5 -0.5 0" rpy="0 0 ${45*pi/180}" />
     </xacro:rs_m90e7>
 
     <xacro:rs_m90e7 prefix="robot4_" parent="world">
         <!-- position robot in the world -->
-        <origin xyz="1 -1 0" rpy="0 0 0" />
+        <origin xyz="0.5 -0.5 0" rpy="0 0 ${135*pi/180}" />
     </xacro:rs_m90e7>
     <!-- ========================================= -->
 

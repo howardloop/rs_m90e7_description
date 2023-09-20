@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /TF1
         - /TF1/Tree1
       Splitter Ratio: 0.5
     Tree Height: 549
@@ -255,7 +254,7 @@ Visualization Manager:
         robot1_link6:
           Value: false
         robot1_tool0:
-          Value: true
+          Value: false
         robot2_base_link:
           Value: true
         robot2_link1:
@@ -271,7 +270,7 @@ Visualization Manager:
         robot2_link6:
           Value: false
         robot2_tool0:
-          Value: true
+          Value: false
         robot3_base_link:
           Value: true
         robot3_link1:
@@ -287,7 +286,7 @@ Visualization Manager:
         robot3_link6:
           Value: false
         robot3_tool0:
-          Value: true
+          Value: false
         robot4_base_link:
           Value: true
         robot4_link1:
@@ -303,7 +302,7 @@ Visualization Manager:
         robot4_link6:
           Value: false
         robot4_tool0:
-          Value: true
+          Value: false
         world:
           Value: true
       Marker Scale: 1
@@ -397,25 +396,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 5.277319431304932
+      Distance: 3.544557571411133
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.1003885269165039
-        Y: -0.1395396590232849
-        Z: 0.02768402174115181
+        X: -0.013507738709449768
+        Y: -0.0007458683103322983
+        Z: 0.04672815650701523
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7853981852531433
+      Pitch: 1.120397925376892
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 0.7853981852531433
+      Yaw: 0.315398633480072
     Saved:
       - Class: rviz_default_plugins/Orbit
         Distance: 3.1647839546203613
