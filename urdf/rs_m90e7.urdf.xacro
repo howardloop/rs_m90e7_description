@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rs_m90e7">
+    <xacro:arg name="prefix" default="" />
+
+    <!-- ========================================= -->
+    <!-- include macro from xacro files -->
+    <!-- ========================================= -->
+    <xacro:include filename="$(find rs_m90e7_description)/urdf/rs_m90e7/rs_m90e7_macro.xacro"/>
+
+
+    <!-- ========================================= -->
+    <!-- define robot-->
+    <!-- ========================================= -->
+    <!-- create link fixed to the "world" -->
+    <link name="world" />
+
+    <xacro:rs_m90e7 prefix="robot1_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="1 1 0" rpy="0 0 0" />
+    </xacro:rs_m90e7>
+
+    <xacro:rs_m90e7 prefix="robot2_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="-1 1 0" rpy="0 0 0" />
+    </xacro:rs_m90e7>
+
+    <xacro:rs_m90e7 prefix="robot3_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="-1 -1 0" rpy="0 0 0" />
+    </xacro:rs_m90e7>
+
+    <xacro:rs_m90e7 prefix="robot4_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="1 -1 0" rpy="0 0 0" />
+    </xacro:rs_m90e7>
+    <!-- ========================================= -->
+
+</robot>

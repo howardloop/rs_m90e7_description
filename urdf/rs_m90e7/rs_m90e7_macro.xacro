@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="rs_m90e7" params="prefix parent *origin">
+    <link name="${prefix}base_link">
+      <inertial>
+        <origin xyz="0.10064 0.44638 0.10194" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="0.84393" ixy="-0.35224" ixz="-0.0031091" iyy="0.54482" iyz="-0.070067" izz="1.2019" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/base_link.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/base_link.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link1">
+      <inertial>
+        <origin xyz="-0.10194 0.34543 0.10064" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="1.2019" ixy="0.070067" ixz="0.0031091" iyy="0.54482" iyz="-0.35224" izz="0.84393" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link1.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link1.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}j1" type="revolute">
+      <origin xyz="0 0 0.10095" rpy="1.5708 0 1.5708" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}link1" />
+      <axis xyz="0 1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="4.7124" />
+    </joint>
+    <link name="${prefix}link2">
+      <inertial>
+        <origin xyz="-0.24228 0.032993 -0.10064" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="0.54482" ixy="0.070067" ixz="-0.35224" iyy="1.2019" iyz="0.0031091" izz="0.84393" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link2.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link2.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}j2" type="revolute">
+      <origin xyz="-0.06895 0.10315 0" rpy="3.1416 0 -1.5708" />
+      <parent link="${prefix}link1" />
+      <child link="${prefix}link2" />
+      <axis xyz="0 -1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="4.7124" />
+    </joint>
+    <link name="${prefix}link3">
+      <inertial>
+        <origin xyz="-0.10064 -0.032993 0.18772" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="0.84393" ixy="-0.0031091" ixz="-0.35224" iyy="1.2019" iyz="-0.070067" izz="0.54482" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link3.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link3.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}j3" type="revolute">
+      <origin xyz="-0.43 0 0" rpy="3.1416 -1.5708 0" />
+      <parent link="${prefix}link2" />
+      <child link="${prefix}link3" />
+      <axis xyz="0 1 0" />
+      <limit lower="-4.0492" upper="1.2566" effort="0" velocity="7.1558" />
+    </joint>
+    <link name="${prefix}link4">
+      <inertial>
+        <origin xyz="-0.18772 0.011293 -0.30936" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="0.54482" ixy="-0.070067" ixz="-0.35224" iyy="1.2019" iyz="-0.0031091" izz="0.84393" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link4.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link4.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}j4" type="revolute">
+      <origin xyz="-0.41 -0.0217 0" rpy="3.1416 1.5708 0" />
+      <parent link="${prefix}link3" />
+      <child link="${prefix}link4" />
+      <axis xyz="0 -1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="16.9" velocity="8.2903" />
+    </joint>
+    <link name="${prefix}link5">
+      <inertial>
+        <origin xyz="-0.30936 -0.26337 -0.052107" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="0.84393" ixy="-0.35224" ixz="-0.0031091" iyy="0.54482" iyz="-0.070067" izz="1.2019" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link5.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link5.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}j5" type="revolute">
+      <origin xyz="0.07565 0.0634 0" rpy="-1.5708 -1.5708 0" />
+      <parent link="${prefix}link4" />
+      <child link="${prefix}link5" />
+      <axis xyz="0 1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="18.9" velocity="8.2903" />
+    </joint>
+    <link name="${prefix}link6">
+      <inertial>
+        <origin xyz="-0.052107 0.39021 0.32677" rpy="0 0 0" />
+        <mass value="14.348" />
+        <inertia ixx="1.2019" ixy="0.0031091" ixz="0.070067" iyy="0.84393" iyz="-0.35224" izz="0.54482" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link6.dae" />
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://rs_m90e7_description/meshes/link6.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}j6" type="revolute">
+      <origin xyz="0.08085 0.0634 0" rpy="1.5708 -1.5708 0" />
+      <parent link="${prefix}link5" />
+      <child link="${prefix}link6" />
+      <axis xyz="0 1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="10.2" velocity="13.177" />
+    </joint>
+    <link name="${prefix}tool0"/>
+    <joint name="${prefix}jtool" type="fixed">
+      <origin xyz="0 -0.0734 0" rpy="0 1.5708 -1.5708" />
+      <parent link="${prefix}link6" />
+      <child link="${prefix}tool0" />
+    </joint>
+    <!-- base_joint fixes base_link to the environment -->
+    <joint name="${prefix}base_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="${prefix}base_link" />
+    </joint>
+  </xacro:macro>
+</robot>
