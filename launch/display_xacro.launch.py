@@ -1,12 +1,15 @@
 from launch import LaunchDescription
-from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
+from launch.actions import TimerAction
 
 
 def generate_launch_description():
 
+    # ----------------------------------------------------------------
     # Get URDF via xacro
+    # ----------------------------------------------------------------
     robot_description_content = Command(
         [
             PathJoinSubstitution([FindExecutable(name="xacro")]),
@@ -17,15 +20,11 @@ def generate_launch_description():
             ),
         ]
     )
-    urdf_file = PathJoinSubstitution(
-        [FindPackageShare("rs_m90e7_description"), "urdf", "rs_m90e7.urdf.xacro"])
-
-    robot_description = {"robot_description": robot_description_content}
-
+    # ----------------------------------------------------------------
     rviz_config_file = PathJoinSubstitution(
         [FindPackageShare("rs_m90e7_description"), "rviz", "xarcro.rviz"]
     )
-
+    # ----------------------------------------------------------------
     joint_state_publisher_node = Node(
         package="joint_state_publisher_gui",
         executable="joint_state_publisher_gui",
@@ -33,6 +32,7 @@ def generate_launch_description():
         parameters=[{'rate': 60.0}]
     )
 
+    robot_description = {"robot_description": robot_description_content}
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -49,10 +49,17 @@ def generate_launch_description():
         arguments=["-d", rviz_config_file],
     )
 
+    delay_start_node = TimerAction(
+        period=2.0,  # 延遲2秒啟動
+        actions=[
+            rviz_node,
+        ]
+    )
+
     return LaunchDescription(
         [
-            joint_state_publisher_node,
             robot_state_publisher_node,
-            rviz_node,
+            joint_state_publisher_node,
+            delay_start_node,
         ]
     )
