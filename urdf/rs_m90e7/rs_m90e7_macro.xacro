@@ -45,7 +45,7 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}j1" type="revolute">
+    <joint name="${prefix}joint1" type="revolute">
       <origin xyz="0 0 0.10095" rpy="1.5708 0 1.5708" />
       <parent link="${prefix}base_link" />
       <child link="${prefix}link1" />
@@ -74,7 +74,7 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}j2" type="revolute">
+    <joint name="${prefix}joint2" type="revolute">
       <origin xyz="-0.06895 0.10315 0" rpy="3.1416 0 -1.5708" />
       <parent link="${prefix}link1" />
       <child link="${prefix}link2" />
@@ -103,7 +103,7 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}j3" type="revolute">
+    <joint name="${prefix}joint3" type="revolute">
       <origin xyz="-0.43 0 0" rpy="3.1416 -1.5708 0" />
       <parent link="${prefix}link2" />
       <child link="${prefix}link3" />
@@ -132,7 +132,7 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}j4" type="revolute">
+    <joint name="${prefix}joint4" type="revolute">
       <origin xyz="-0.41 -0.0217 0" rpy="3.1416 1.5708 0" />
       <parent link="${prefix}link3" />
       <child link="${prefix}link4" />
@@ -161,7 +161,7 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}j5" type="revolute">
+    <joint name="${prefix}joint5" type="revolute">
       <origin xyz="0.07565 0.0634 0" rpy="-1.5708 -1.5708 0" />
       <parent link="${prefix}link4" />
       <child link="${prefix}link5" />
@@ -190,7 +190,7 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}j6" type="revolute">
+    <joint name="${prefix}joint6" type="revolute">
       <origin xyz="0.08085 0.0634 0" rpy="1.5708 -1.5708 0" />
       <parent link="${prefix}link5" />
       <child link="${prefix}link6" />
