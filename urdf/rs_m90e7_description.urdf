@@ -5,10 +5,10 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.10064 0.44638 0.10194"
+        xyz="0.00004 0.01193 0.05418"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="0.91957" />
       <inertia
         ixx="0.84393"
         ixy="-0.35224"
@@ -45,10 +45,10 @@
     name="link1">
     <inertial>
       <origin
-        xyz="-0.10194 0.34543 0.10064"
+        xyz="-0.00918 0.08953 0.0"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="2.09505" />
       <inertia
         ixx="1.2019"
         ixy="0.070067"
@@ -103,10 +103,10 @@
     name="link2">
     <inertial>
       <origin
-        xyz="-0.24228 0.032993 -0.10064"
+        xyz="-0.21500 0.09444 0.00000"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="6.55317" />
       <inertia
         ixx="0.54482"
         ixy="0.070067"
@@ -161,10 +161,10 @@
     name="link3">
     <inertial>
       <origin
-        xyz="-0.10064 -0.032993 0.18772"
+        xyz="-0.19905 0.05265 0.00000"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="2.72253" />
       <inertia
         ixx="0.84393"
         ixy="-0.0031091"
@@ -219,10 +219,10 @@
     name="link4">
     <inertial>
       <origin
-        xyz="-0.18772 0.011293 -0.30936"
+        xyz="0.015396 0.057512 0.000000"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="0.832958" />
       <inertia
         ixx="0.54482"
         ixy="-0.070067"
@@ -277,10 +277,10 @@
     name="link5">
     <inertial>
       <origin
-        xyz="-0.30936 -0.26337 -0.052107"
+        xyz="0.015396 0.057512 0.000000"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="0.832958" />
       <inertia
         ixx="0.84393"
         ixy="-0.35224"
@@ -335,10 +335,10 @@
     name="link6">
     <inertial>
       <origin
-        xyz="-0.052107 0.39021 0.32677"
+        xyz="0.000045 -0.035542 0.000000"
         rpy="0 0 0" />
       <mass
-        value="14.348" />
+        value="0.391580" />
       <inertia
         ixx="1.2019"
         ixy="0.0031091"
