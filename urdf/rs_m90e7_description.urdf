@@ -389,9 +389,9 @@
       effort="10.2"
       velocity="13.177" />
   </joint>
-  <link name="tool0"/>
+  <link name="flange"/>
   <joint
-    name="jtool"
+    name="jointf"
     type="fixed">
     <origin
       xyz="0 -0.0734 0"
@@ -399,7 +399,7 @@
     <parent
       link="link6" />
     <child
-      link="tool0" />
+      link="flange" />
   </joint>
 
 </robot>

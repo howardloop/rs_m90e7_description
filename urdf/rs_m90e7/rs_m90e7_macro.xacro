@@ -3,9 +3,18 @@
   <xacro:macro name="rs_m90e7" params="prefix parent *origin">
     <link name="${prefix}base_link">
       <inertial>
-        <origin xyz="0.10064 0.44638 0.10194" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="0.84393" ixy="-0.35224" ixz="-0.0031091" iyy="0.54482" iyz="-0.070067" izz="1.2019" />
+        <origin
+          xyz="0.00004 0.01193 0.05418"
+          rpy="0 0 0" />
+        <mass
+          value="0.91957" />
+        <inertia
+          ixx=" 0.003109"
+          ixy="-0.000002"
+          ixz="-0.000001"
+          iyy=" 0.002643"
+          iyz="-0.000092"
+          izz=" 0.003424" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -25,9 +34,18 @@
     </link>
     <link name="${prefix}link1">
       <inertial>
-        <origin xyz="-0.10194 0.34543 0.10064" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="1.2019" ixy="0.070067" ixz="0.0031091" iyy="0.54482" iyz="-0.35224" izz="0.84393" />
+        <origin
+          xyz="-0.009177 0.089530 0.000000"
+          rpy="0 0 0" />
+        <mass
+          value="2.095055" />
+        <inertia
+          ixx=" 0.006074"
+          ixy="-0.000305"
+          ixz=" 0.000000"
+          iyy=" 0.004584"
+          iyz=" 0.000000"
+          izz=" 0.006717" />  
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -54,9 +72,18 @@
     </joint>
     <link name="${prefix}link2">
       <inertial>
-        <origin xyz="-0.24228 0.032993 -0.10064" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="0.54482" ixy="0.070067" ixz="-0.35224" iyy="1.2019" iyz="0.0031091" izz="0.84393" />
+        <origin
+          xyz="-0.21500 0.09444 0.00000"
+          rpy="0 0 0" />
+        <mass
+          value="6.55317" />
+        <inertia
+          ixx=" 0.015891"
+          ixy=" 0.000000"
+          ixz=" 0.000000"
+          iyy=" 0.206360"
+          iyz=" 0.000000"
+          izz=" 0.210906" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -83,9 +110,18 @@
     </joint>
     <link name="${prefix}link3">
       <inertial>
-        <origin xyz="-0.10064 -0.032993 0.18772" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="0.84393" ixy="-0.0031091" ixz="-0.35224" iyy="1.2019" iyz="-0.070067" izz="0.54482" />
+        <origin
+          xyz="-0.19905 0.05265 0.00000"
+          rpy="0 0 0" />
+        <mass
+          value="2.72253" />
+        <inertia
+          ixx=" 0.003560"
+          ixy=" -0.000889"
+          ixz=" 0.000000"
+          iyy=" 0.080167"
+          iyz=" 0.000000"
+          izz=" 0.081015" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -112,9 +148,18 @@
     </joint>
     <link name="${prefix}link4">
       <inertial>
-        <origin xyz="-0.18772 0.011293 -0.30936" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="0.54482" ixy="-0.070067" ixz="-0.35224" iyy="1.2019" iyz="-0.0031091" izz="0.84393" />
+        <origin
+          xyz="0.015396 0.057512 0.000000"
+          rpy="0 0 0" />
+        <mass
+          value="0.832958" />
+        <inertia
+          ixx=" 0.000897"
+          ixy=" 0.000092"
+          ixz=" 0.000000"
+          iyy=" 0.001490"
+          iyz=" 0.000000"
+          izz=" 0.001595" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -141,9 +186,18 @@
     </joint>
     <link name="${prefix}link5">
       <inertial>
-        <origin xyz="-0.30936 -0.26337 -0.052107" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="0.84393" ixy="-0.35224" ixz="-0.0031091" iyy="0.54482" iyz="-0.070067" izz="1.2019" />
+        <origin
+          xyz="0.015396 0.057512 0.000000"
+          rpy="0 0 0" />
+        <mass
+          value="0.832958" />
+        <inertia
+          ixx=" 0.000897"
+          ixy=" 0.000092"
+          ixz=" 0.000000"
+          iyy=" 0.001490"
+          iyz=" 0.000000"
+          izz=" 0.001595" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -170,9 +224,18 @@
     </joint>
     <link name="${prefix}link6">
       <inertial>
-        <origin xyz="-0.052107 0.39021 0.32677" rpy="0 0 0" />
-        <mass value="14.348" />
-        <inertia ixx="1.2019" ixy="0.0031091" ixz="0.070067" iyy="0.84393" iyz="-0.35224" izz="0.54482" />
+        <origin
+          xyz="0.000045 -0.035542 0.000000"
+          rpy="0 0 0" />
+        <mass
+          value="0.391580" />
+        <inertia
+          ixx=" 0.000327"
+          ixy=" 0.000000"
+          ixz=" 0.000000"
+          iyy=" 0.000360"
+          iyz=" 0.000000"
+          izz=" 0.000326" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -197,11 +260,11 @@
       <axis xyz="0 1 0" />
       <limit lower="-6.2832" upper="6.2832" effort="10.2" velocity="13.177" />
     </joint>
-    <link name="${prefix}tool0"/>
-    <joint name="${prefix}jtool" type="fixed">
+    <link name="${prefix}flange"/>
+    <joint name="${prefix}jointf" type="fixed">
       <origin xyz="0 -0.0734 0" rpy="0 1.5708 -1.5708" />
       <parent link="${prefix}link6" />
-      <child link="${prefix}tool0" />
+      <child link="${prefix}flange" />
     </joint>
     <!-- base_joint fixes base_link to the environment -->
     <joint name="${prefix}base_joint" type="fixed">
