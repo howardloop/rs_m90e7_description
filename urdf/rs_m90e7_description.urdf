@@ -10,12 +10,12 @@
       <mass
         value="0.91957" />
       <inertia
-        ixx="0.84393"
-        ixy="-0.35224"
-        ixz="-0.0031091"
-        iyy="0.54482"
-        iyz="-0.070067"
-        izz="1.2019" />
+        ixx=" 0.003109"
+        ixy="-0.000002"
+        ixz="-0.000001"
+        iyy=" 0.002643"
+        iyz="-0.000092"
+        izz=" 0.003424" />
     </inertial>
     <visual>
       <origin
@@ -45,17 +45,17 @@
     name="link1">
     <inertial>
       <origin
-        xyz="-0.00918 0.08953 0.0"
+        xyz="-0.009177 0.089530 0.000000"
         rpy="0 0 0" />
       <mass
-        value="2.09505" />
+        value="2.095055" />
       <inertia
-        ixx="1.2019"
-        ixy="0.070067"
-        ixz="0.0031091"
-        iyy="0.54482"
-        iyz="-0.35224"
-        izz="0.84393" />
+        ixx=" 0.006074"
+        ixy="-0.000305"
+        ixz=" 0.000000"
+        iyy=" 0.004584"
+        iyz=" 0.000000"
+        izz=" 0.006717" />  
     </inertial>
     <visual>
       <origin
@@ -82,7 +82,7 @@
     </collision>
   </link>
   <joint
-    name="j1"
+    name="joint1"
     type="revolute">
     <origin
       xyz="0 0 0.10095"
@@ -108,12 +108,12 @@
       <mass
         value="6.55317" />
       <inertia
-        ixx="0.54482"
-        ixy="0.070067"
-        ixz="-0.35224"
-        iyy="1.2019"
-        iyz="0.0031091"
-        izz="0.84393" />
+        ixx=" 0.015891"
+        ixy=" 0.000000"
+        ixz=" 0.000000"
+        iyy=" 0.206360"
+        iyz=" 0.000000"
+        izz=" 0.210906" />
     </inertial>
     <visual>
       <origin
@@ -140,7 +140,7 @@
     </collision>
   </link>
   <joint
-    name="j2"
+    name="joint2"
     type="revolute">
     <origin
       xyz="-0.06895 0.10315 0"
@@ -166,12 +166,12 @@
       <mass
         value="2.72253" />
       <inertia
-        ixx="0.84393"
-        ixy="-0.0031091"
-        ixz="-0.35224"
-        iyy="1.2019"
-        iyz="-0.070067"
-        izz="0.54482" />
+        ixx=" 0.003560"
+        ixy=" -0.000889"
+        ixz=" 0.000000"
+        iyy=" 0.080167"
+        iyz=" 0.000000"
+        izz=" 0.081015" />
     </inertial>
     <visual>
       <origin
@@ -198,7 +198,7 @@
     </collision>
   </link>
   <joint
-    name="j3"
+    name="joint3"
     type="revolute">
     <origin
       xyz="-0.43 0 0"
@@ -224,12 +224,12 @@
       <mass
         value="0.832958" />
       <inertia
-        ixx="0.54482"
-        ixy="-0.070067"
-        ixz="-0.35224"
-        iyy="1.2019"
-        iyz="-0.0031091"
-        izz="0.84393" />
+        ixx=" 0.000897"
+        ixy=" 0.000092"
+        ixz=" 0.000000"
+        iyy=" 0.001490"
+        iyz=" 0.000000"
+        izz=" 0.001595" />
     </inertial>
     <visual>
       <origin
@@ -256,7 +256,7 @@
     </collision>
   </link>
   <joint
-    name="j4"
+    name="joint4"
     type="revolute">
     <origin
       xyz="-0.41 -0.0217 0"
@@ -282,12 +282,12 @@
       <mass
         value="0.832958" />
       <inertia
-        ixx="0.84393"
-        ixy="-0.35224"
-        ixz="-0.0031091"
-        iyy="0.54482"
-        iyz="-0.070067"
-        izz="1.2019" />
+        ixx=" 0.000897"
+        ixy=" 0.000092"
+        ixz=" 0.000000"
+        iyy=" 0.001490"
+        iyz=" 0.000000"
+        izz=" 0.001595" />
     </inertial>
     <visual>
       <origin
@@ -314,7 +314,7 @@
     </collision>
   </link>
   <joint
-    name="j5"
+    name="joint5"
     type="revolute">
     <origin
       xyz="0.07565 0.0634 0"
@@ -340,12 +340,12 @@
       <mass
         value="0.391580" />
       <inertia
-        ixx="1.2019"
-        ixy="0.0031091"
-        ixz="0.070067"
-        iyy="0.84393"
-        iyz="-0.35224"
-        izz="0.54482" />
+        ixx=" 0.000327"
+        ixy=" 0.000000"
+        ixz=" 0.000000"
+        iyy=" 0.000360"
+        iyz=" 0.000000"
+        izz=" 0.000326" />
     </inertial>
     <visual>
       <origin
@@ -372,7 +372,7 @@
     </collision>
   </link>
   <joint
-    name="j6"
+    name="joint6"
     type="revolute">
     <origin
       xyz="0.08085 0.0634 0"
