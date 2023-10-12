@@ -17,7 +17,8 @@ Panels:
     Name: Tool Properties
     Splitter Ratio: 0.5886790156364441
   - Class: rviz_common/Views
-    Expanded: ~
+    Expanded:
+      - /Current View1
     Name: Views
     Splitter Ratio: 0.5
   - Class: rviz_common/Time
@@ -69,6 +70,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         link1:
           Alpha: 1
           Show Axes: false
@@ -99,10 +104,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        tool0:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
       Mass Properties:
         Inertia: false
         Mass: false
@@ -114,22 +115,22 @@ Visualization Manager:
     - Class: rviz_default_plugins/Axes
       Enabled: true
       Length: 0.5
-      Name: coordinate_0
+      Name: base
       Radius: 0.009999999776482582
       Reference Frame: base_link
       Value: true
     - Class: rviz_default_plugins/Axes
       Enabled: true
       Length: 0.10000000149011612
-      Name: coordinate_6
+      Name: flange
       Radius: 0.009999999776482582
-      Reference Frame: tool0
+      Reference Frame: flange
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Fixed Frame: base_link
-    Frame Rate: 30
+    Frame Rate: 100
   Name: root
   Tools:
     - Class: rviz_default_plugins/Interact
