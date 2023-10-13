@@ -16,13 +16,13 @@ def generate_launch_description():
             " ",
             PathJoinSubstitution(
                 [FindPackageShare("rs_m90e7_description"),
-                 "urdf", "rs_m90e7.urdf.xacro"]
+                 "urdf", "robot4.urdf.xacro"]
             ),
         ]
     )
     # ----------------------------------------------------------------
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare("rs_m90e7_description"), "rviz", "urdf.rviz"]
+        [FindPackageShare("rs_m90e7_description"), "rviz", "xarcro.rviz"]
     )
     # ----------------------------------------------------------------
     joint_state_publisher_node = Node(

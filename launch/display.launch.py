@@ -11,7 +11,7 @@ def generate_launch_description():
     rviz_file = PathJoinSubstitution(
         [FindPackageShare("rs_m90e7_description"), "rviz", "urdf.rviz"])
     urdf_file = PathJoinSubstitution(
-        [FindPackageShare("rs_m90e7_description"), "urdf", "rs_m90e7_description.urdf"])
+        [FindPackageShare("rs_m90e7_description"), "urdf", "rs_m90e7.urdf"])
 
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',

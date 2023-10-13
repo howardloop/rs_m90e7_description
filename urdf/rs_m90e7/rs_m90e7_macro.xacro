@@ -117,7 +117,7 @@
           value="2.72253" />
         <inertia
           ixx=" 0.003560"
-          ixy=" -0.000889"
+          ixy="-0.000889"
           ixz=" 0.000000"
           iyy=" 0.080167"
           iyz=" 0.000000"
@@ -266,11 +266,16 @@
       <parent link="${prefix}link6" />
       <child link="${prefix}flange" />
     </joint>
-    <!-- base_joint fixes base_link to the environment -->
-    <joint name="${prefix}base_joint" type="fixed">
-      <xacro:insert_block name="origin" />
-      <parent link="${parent}" />
-      <child link="${prefix}base_link" />
-    </joint>
+
+    <!-- 檢查${prefix}參數再決定該區快要不要輸出 -->
+    <xacro:if value="${parent != ''}">
+      <!-- base_joint fixes base_link to the environment -->
+      <joint name="${prefix}base_joint" type="fixed">
+        <xacro:insert_block name="origin" />
+        <parent link="${parent}" />
+        <child link="${prefix}base_link" />
+      </joint>
+    </xacro:if>   
+
   </xacro:macro>
 </robot>

@@ -7,31 +7,9 @@
     <!-- ========================================= -->
     <xacro:include filename="$(find rs_m90e7_description)/urdf/rs_m90e7/rs_m90e7_macro.xacro"/>
 
-
-    <!-- ========================================= -->
-    <!-- define robot-->
-    <!-- ========================================= -->
-    <!-- create link fixed to the "world" -->
-    <link name="world" />
-
-    <xacro:rs_m90e7 prefix="robot1_" parent="world">
+    <xacro:rs_m90e7 prefix="" parent="">
         <!-- position robot in the world -->
-        <origin xyz="0.5 0.5 0" rpy="0 0 ${-135*pi/180}" />
-    </xacro:rs_m90e7>
-
-    <xacro:rs_m90e7 prefix="robot2_" parent="world">
-        <!-- position robot in the world -->
-        <origin xyz="-0.5 0.5 0" rpy="0 0 ${-45*pi/180}" />
-    </xacro:rs_m90e7>
-
-    <xacro:rs_m90e7 prefix="robot3_" parent="world">
-        <!-- position robot in the world -->
-        <origin xyz="-0.5 -0.5 0" rpy="0 0 ${45*pi/180}" />
-    </xacro:rs_m90e7>
-
-    <xacro:rs_m90e7 prefix="robot4_" parent="world">
-        <!-- position robot in the world -->
-        <origin xyz="0.5 -0.5 0" rpy="0 0 ${135*pi/180}" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
     </xacro:rs_m90e7>
     <!-- ========================================= -->
 

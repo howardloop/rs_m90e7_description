@@ -9,7 +9,7 @@
     name="robot_state_publisher" 
     pkg="robot_state_publisher" 
     exec="robot_state_publisher"
-    args="$(find-pkg-share rs_m90e7_description)/urdf/rs_m90e7_description.urdf"> 
+    args="$(find-pkg-share rs_m90e7_description)/urdf/rs_m90e7.urdf"> 
     <param name="publish_frequency" value="100.0"/>  
   </node> 
   <node 
