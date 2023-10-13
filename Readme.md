@@ -65,11 +65,16 @@ ros2 launch rs_m90e7_description display_xacro.launch.py
 幾個URDF與XACRO檔案的關係如下，所以要動到機械參數請直接修改rs_m90e7_macro.xacro即可
 
 └── urdf
-    ├── **robot4.urdf.xacro**
-    ├── rs_m90e7
-    │   └── **rs_m90e7_macro.xacro**
-    ├── **rs_m90e7.urdf**
-    └── **rs_m90e7.urdf.xacro**
+
+​    ├── **robot4.urdf.xacro**
+
+​    ├── rs_m90e7
+
+​    │   └── **rs_m90e7_macro.xacro**
+
+​    ├── **rs_m90e7.urdf**
+
+​    └── **rs_m90e7.urdf.xacro**
 
 ```mermaid
 stateDiagram-v2
