@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:macro name="rs_m90e7" params="prefix parent *origin">
+    <!-- ======================================================== -->
+    <!-- robot link -->
+    <!-- ======================================================== -->
     <link name="${prefix}base_link">
       <inertial>
         <origin
-          xyz="0.00004 0.01193 0.05418"
+          xyz="0.00000 0.00000 0.00000"
           rpy="0 0 0" />
         <mass
-          value="0.91957" />
+          value="1.0" />
         <inertia
-          ixx=" 0.003109"
-          ixy="-0.000002"
-          ixz="-0.000001"
-          iyy=" 0.002643"
-          iyz="-0.000092"
-          izz=" 0.003424" />
+          ixx=" 0.001000"
+          ixy=" 0.000000"
+          ixz=" 0.000000"
+          iyy=" 0.001000"
+          iyz=" 0.000000"
+          izz=" 0.001000" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -35,18 +38,23 @@
     <link name="${prefix}link1">
       <inertial>
         <origin
-          xyz="-0.009177 0.089530 0.000000"
+          xyz=
+          "-0.007155
+            0.074751
+            0.000996"
           rpy="0 0 0" />
         <mass
-          value="2.095055" />
+          value="5.600" />
         <inertia
-          ixx=" 0.006074"
-          ixy="-0.000305"
+          ixx=" 0.019807"
+          iyy=" 0.013098"
+          izz=" 0.020563"
+          ixy=" 0.000000"
           ixz=" 0.000000"
-          iyy=" 0.004584"
-          iyz=" 0.000000"
-          izz=" 0.006717" />  
+          iyz=" 0.000000" />
+
       </inertial>
+
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
@@ -63,27 +71,23 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}joint1" type="revolute">
-      <origin xyz="0 0 0.10095" rpy="1.5708 0 1.5708" />
-      <parent link="${prefix}base_link" />
-      <child link="${prefix}link1" />
-      <axis xyz="0 1 0" />
-      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="4.7124" />
-    </joint>
     <link name="${prefix}link2">
       <inertial>
         <origin
-          xyz="-0.21500 0.09444 0.00000"
+          xyz=
+          "-0.215018
+            0.080988
+            0.000000"
           rpy="0 0 0" />
         <mass
-          value="6.55317" />
+          value="13.799" />
         <inertia
-          ixx=" 0.015891"
+          ixx=" 0.041621"
+          iyy=" 0.542754"
+          izz=" 0.555726"
           ixy=" 0.000000"
           ixz=" 0.000000"
-          iyy=" 0.206360"
-          iyz=" 0.000000"
-          izz=" 0.210906" />
+          iyz=" 0.000000" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -101,27 +105,23 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}joint2" type="revolute">
-      <origin xyz="-0.06895 0.10315 0" rpy="3.1416 0 -1.5708" />
-      <parent link="${prefix}link1" />
-      <child link="${prefix}link2" />
-      <axis xyz="0 -1 0" />
-      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="4.7124" />
-    </joint>
     <link name="${prefix}link3">
       <inertial>
         <origin
-          xyz="-0.19905 0.05265 0.00000"
+          xyz=
+          "-0.256997
+            0.061315
+           -0.000055"
           rpy="0 0 0" />
         <mass
-          value="2.72253" />
+          value="4.137" />
         <inertia
-          ixx=" 0.003560"
-          ixy="-0.000889"
+          ixx=" 0.007112"
+          iyy=" 0.122290"
+          izz=" 0.124242"
+          ixy=" 0.000000"
           ixz=" 0.000000"
-          iyy=" 0.080167"
-          iyz=" 0.000000"
-          izz=" 0.081015" />
+          iyz=" 0.000000" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -139,27 +139,23 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}joint3" type="revolute">
-      <origin xyz="-0.43 0 0" rpy="3.1416 -1.5708 0" />
-      <parent link="${prefix}link2" />
-      <child link="${prefix}link3" />
-      <axis xyz="0 1 0" />
-      <limit lower="-4.0492" upper="1.2566" effort="0" velocity="7.1558" />
-    </joint>
     <link name="${prefix}link4">
       <inertial>
         <origin
-          xyz="0.015396 0.057512 0.000000"
+          xyz=
+          " 0.026648
+            0.059889
+            0.000116"
           rpy="0 0 0" />
         <mass
-          value="0.832958" />
+          value="2.000" />
         <inertia
-          ixx=" 0.000897"
-          ixy=" 0.000092"
+          ixx=" 0.002061"
+          iyy=" 0.003868"
+          izz=" 0.003992"
+          ixy=" 0.000000"
           ixz=" 0.000000"
-          iyy=" 0.001490"
-          iyz=" 0.000000"
-          izz=" 0.001595" />
+          iyz=" 0.000000" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -177,27 +173,23 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}joint4" type="revolute">
-      <origin xyz="-0.41 -0.0217 0" rpy="3.1416 1.5708 0" />
-      <parent link="${prefix}link3" />
-      <child link="${prefix}link4" />
-      <axis xyz="0 -1 0" />
-      <limit lower="-6.2832" upper="6.2832" effort="16.9" velocity="8.2903" />
-    </joint>
     <link name="${prefix}link5">
       <inertial>
         <origin
-          xyz="0.015396 0.057512 0.000000"
+          xyz=
+          " 0.026648
+            0.053986
+            0.000116"
           rpy="0 0 0" />
         <mass
-          value="0.832958" />
+          value="2.000" />
         <inertia
-          ixx=" 0.000897"
-          ixy=" 0.000092"
+          ixx=" 0.002061"
+          iyy=" 0.003868"
+          izz=" 0.003992"
+          ixy=" 0.000000"
           ixz=" 0.000000"
-          iyy=" 0.001490"
-          iyz=" 0.000000"
-          izz=" 0.001595" />
+          iyz=" 0.000000" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -215,27 +207,27 @@
         </geometry>
       </collision>
     </link>
-    <joint name="${prefix}joint5" type="revolute">
-      <origin xyz="0.07565 0.0634 0" rpy="-1.5708 -1.5708 0" />
-      <parent link="${prefix}link4" />
-      <child link="${prefix}link5" />
-      <axis xyz="0 1 0" />
-      <limit lower="-6.2832" upper="6.2832" effort="18.9" velocity="8.2903" />
-    </joint>
     <link name="${prefix}link6">
       <inertial>
         <origin
-          xyz="0.000045 -0.035542 0.000000"
+          xyz=
+          "-0.002215
+            0.037943
+           -0.000790"
           rpy="0 0 0" />
+0.000790
+0.002215
+0.037943
+
         <mass
-          value="0.391580" />
+          value="0.395" />
         <inertia
-          ixx=" 0.000327"
+          ixx=" 0.000411"
+          iyy=" 0.000483"
+          izz=" 0.000429"
           ixy=" 0.000000"
           ixz=" 0.000000"
-          iyy=" 0.000360"
-          iyz=" 0.000000"
-          izz=" 0.000326" />
+          iyz=" 0.000000" />
       </inertial>
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -252,30 +244,67 @@
           <mesh filename="package://rs_m90e7_description/meshes/link6.stl" />
         </geometry>
       </collision>
-    </link>
-    <joint name="${prefix}joint6" type="revolute">
-      <origin xyz="0.08085 0.0634 0" rpy="1.5708 -1.5708 0" />
-      <parent link="${prefix}link5" />
-      <child link="${prefix}link6" />
-      <axis xyz="0 1 0" />
-      <limit lower="-6.2832" upper="6.2832" effort="10.2" velocity="13.177" />
-    </joint>
-    <link name="${prefix}flange"/>
-    <joint name="${prefix}jointf" type="fixed">
-      <origin xyz="0 -0.0734 0" rpy="0 1.5708 -1.5708" />
-      <parent link="${prefix}link6" />
-      <child link="${prefix}flange" />
-    </joint>
-
-    <!-- 檢查${prefix}參數再決定該區快要不要輸出 -->
+    </link>  
+    <link name="${prefix}flange"/>      
+    <!-- ======================================================== -->
+    <!-- robot joint -->
+    <!-- ======================================================== -->
+    <!-- 檢查${parent}參數再決定該區快要不要輸出該joint -->
     <xacro:if value="${parent != ''}">
-      <!-- base_joint fixes base_link to the environment -->
       <joint name="${prefix}base_joint" type="fixed">
         <xacro:insert_block name="origin" />
         <parent link="${parent}" />
         <child link="${prefix}base_link" />
       </joint>
-    </xacro:if>   
+    </xacro:if>
 
+    <joint name="${prefix}joint1" type="revolute">
+      <origin xyz="0 0 0.10095" rpy="1.5708 0 1.5708" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}link1" />
+      <axis xyz="0 1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="4.7124" />
+    </joint>
+    <joint name="${prefix}joint2" type="revolute">
+      <origin xyz="-0.06895 0.10315 0" rpy="3.1416 0 -1.5708" />
+      <parent link="${prefix}link1" />
+      <child link="${prefix}link2" />
+      <axis xyz="0 -1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="4.7124" />
+    </joint>
+    <joint name="${prefix}joint3" type="revolute">
+      <origin xyz="-0.43 0 0" rpy="3.1416 -1.5708 0" />
+      <parent link="${prefix}link2" />
+      <child link="${prefix}link3" />
+      <axis xyz="0 1 0" />
+      <limit lower="-4.0492" upper="1.2566" effort="0" velocity="7.1558" />
+    </joint>
+    <joint name="${prefix}joint4" type="revolute">
+      <origin xyz="-0.41 -0.0217 0" rpy="3.1416 1.5708 0" />
+      <parent link="${prefix}link3" />
+      <child link="${prefix}link4" />
+      <axis xyz="0 -1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="16.9" velocity="8.2903" />
+    </joint>
+    <joint name="${prefix}joint5" type="revolute">
+      <origin xyz="0.07565 0.0634 0" rpy="-1.5708 -1.5708 0" />
+      <parent link="${prefix}link4" />
+      <child link="${prefix}link5" />
+      <axis xyz="0 1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="18.9" velocity="8.2903" />
+    </joint>
+    <joint name="${prefix}joint6" type="revolute">
+      <origin xyz="0.08085 0.0634 0" rpy="-1.5708 -1.5708 0" />
+      <parent link="${prefix}link5" />
+      <child link="${prefix}link6" />
+      <axis xyz="0 -1 0" />
+      <limit lower="-6.2832" upper="6.2832" effort="10.2" velocity="13.177" />
+    </joint>
+    <joint name="${prefix}jointf" type="fixed">
+      <origin xyz="0 0.0734 0" rpy="0 -1.5708 -1.5708" />
+      <parent link="${prefix}link6" />
+      <child link="${prefix}flange" />
+    </joint>
+   
   </xacro:macro>
 </robot>
