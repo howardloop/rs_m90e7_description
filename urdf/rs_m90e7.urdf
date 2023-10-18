@@ -19,7 +19,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/base_link.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -41,7 +41,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/link1.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -63,7 +63,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/link2.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -85,7 +85,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/link3.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -107,7 +107,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/link4.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -129,7 +129,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/link5.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -151,7 +151,7 @@
         <mesh filename="package://rs_m90e7_description/meshes/link6.dae"/>
       </geometry>
       <material name="">
-        <color rgba="0 0 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision>
@@ -177,14 +177,14 @@
     <limit effort="0" lower="-6.2832" upper="6.2832" velocity="4.7124"/>
   </joint>
   <joint name="joint3" type="revolute">
-    <origin rpy="3.1416 -1.5708 0" xyz="-0.43 0 0"/>
+    <origin rpy="3.1416 -1.5708 0" xyz="-0.43 0.01 0"/>
     <parent link="link2"/>
     <child link="link3"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-4.0492" upper="1.2566" velocity="7.1558"/>
   </joint>
   <joint name="joint4" type="revolute">
-    <origin rpy="3.1416 1.5708 0" xyz="-0.41 -0.0217 0"/>
+    <origin rpy="3.1416 1.5708 0" xyz="-0.41 -0.0117 0"/>
     <parent link="link3"/>
     <child link="link4"/>
     <axis xyz="0 -1 0"/>
